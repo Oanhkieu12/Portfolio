@@ -1,0 +1,344 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+	font-family: 'Roboto', sans-serif;font-size: 16px;color: #666666;margin: 0
+}
+header{
+	width: 100%;height: 60px;background-color: rgba(255,255,255,0.80);box-shadow: 5px 5px 5px lightgray;z-index: 100;position: fixed;left: 0;top: 0
+}
+.text-trang{color:white}
+.logo{padding-top: 11px}
+.menu{padding-top: 20px}
+.menu ul{
+	padding: 0;margin: 0;list-style: none;display: flex
+}
+.menu ul li a{
+	padding: 8px 25px;border-radius: 20px;font-size: 17px
+}
+.menu ul li a:hover{
+	background-color:rgba(248,165,166,1.00);color: white
+}
+.menu ul li .menu-item.active{
+	background-color: #958BCC;color:white
+}
+#home{
+	width: 100%;min-height: 1000px;padding-top: 100px;background:url("../img/bg-header.png"), url("../img/profile.png");background-repeat: no-repeat;background-position: left top,bottom right
+}
+
+#about{
+	width: 100%;min-height: 1000px;padding-top: 100px;background:#E3C1EF
+}
+#skill{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color:white
+}
+/* Style the tab */
+#skill .tab {
+  overflow: hidden;
+  border: 1.5px ;
+  display: flex;border-radius: 10px
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  width: 50%;
+  border-radius: 10px;background: #A987DB;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+ 
+.progress{width:100%;height: 18px;background-color:#BBBBBB;border-radius: 20px;margin-bottom: 15px }
+.bar{
+	height:18px;border-radius:20px;text-align: center;color: white
+}
+/*style the buttons indesige*/
+#skill .tab button{
+	width: 50%;border-radius: 10px;background: none;border: none;
+	outline: none;cursor: pointer;padding: 14px 16px; transition: 0.3s;font-size: 17px;color:black
+}
+/*thay doi bg color*/
+#skill .tab button:hover {
+	background-color: #958BCC;color:white
+}
+/* create an active*/
+#skill .tab button.active{
+	background-color:#69539F;color:white
+}
+#skill .tabcontent{
+	
+}
+
+#services{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color: #E78654}
+.service{width: 100%;height: 150px;display: flex}
+.service-icon{
+	width: 100%;height: 150px;border: 1px solid #847CAD;display: flex;justify-content: center;align-items: center
+}
+.service-icon{
+	width:200px;color:#958BCC;transition:all 0.6s}
+.service-icon img{
+	width:40px;transition:all 0.6s
+}
+.service-text{width: 100%;height: 150px;padding:15px;transition:all 0.6s}
+.service:hover .service-icon img{ width: 60px}.service:hover .service-icon i{font-size: 60px}
+.service:hover .service-text{
+	background-color:#847CAD ;color:white
+}
+#services{
+width: 100%;min-height: 1000px;padding-top: 100px;background-color:white
+}
+
+
+#projects{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color: #669F80
+}
+#projects .tab button:hover {
+  border-bottom: 2px solid  #958BCC;color: #958BCC
+}
+#projects{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color:white
+}
+
+/* Create an active/current tablink class */
+#projects .tab button.active {
+ border-bottom: 2px solid #503F7B;color: #503F7B
+}
+
+/* Style the tab content */
+#projects .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* Style the buttons inside the tab */
+#projects .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5;margin-left: 20px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+/* Change background color of buttons on hover */
+
+.box{
+	display: flex;justify-content: space-between;align-items: center
+}
+#projects .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
+#projects .owl-nav [class*='owl-'] {
+	font-size:25px;border:1px solid #8E8E8E;  color: black;width: 40px;
+}
+
+#projects .owl-nav .owl-next{ position:absolute; right:-3%;}
+#projects .owl-nav .owl-prev{ position:absolute; left:-3%;}
+#projects .owl-nav [class*='owl-']:hover {
+      background:none;
+      color:blue;
+      text-decoration: none; }
+
+#testimonial{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color:#EDE3F7
+}
+#testimonial .client{
+	text-align: center;display: flex;flex-direction: column;justify-content: center;align-items: center;padding: 10px 50px
+}
+#testimonial .client img{
+	width: 100px;height:100px;border-radius: 50%
+}
+#testimonial .vien{
+	width: 100px;height: 100px;border-radius:50%;border-bottom: 1px solid #344E94;padding: 7px
+}
+#testimonial .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#testimonial .owl-nav [class*='owl-'] {
+	font-size:35px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #958BCC
+}
+
+#testimonial .owl-nav .owl-next{ position:absolute; right:5%;}
+#testimonial .owl-nav .owl-prev{ position:absolute; left:5%;}
+#testimonial .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:yellow;
+      text-decoration: none; }
+#contact{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color:white
+}
+#contact .vien-chan{
+	padding-bottom: 15px;font-size: 20px;color: black;border-bottom: 1px solid #414141
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.tieu-de{
+	color:#26A29C;font-size:40px
+}
+.text-vang{color:#FFAA3F}
+.so{font-size: 120px;color:black;font-weight: bold}
+.year{padding-left: 10px;letter-spacing: 20px;
+}
+.text-do{color:#FF393C}
+.box{display: flex;justify-content: space-betwen}
+.bo-goc{
+	border-radius:10px}
+/**
+ * ----------------------------------------
+ * animation slide-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+.bounce-in-left {
+	-webkit-animation: bounce-in-left 1.1s 0.3s infinite both;
+	        animation: bounce-in-left 1.1s 0.3s infinite both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-17 14:0:16
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation bounce-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-in-left {
+  0% {
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateX(-68px);
+            transform: translateX(-68px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateX(-28px);
+            transform: translateX(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-left {
+  0% {
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateX(-68px);
+            transform: translateX(-68px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateX(-28px);
+            transform: translateX(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
